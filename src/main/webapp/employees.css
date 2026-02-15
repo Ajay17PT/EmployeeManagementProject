@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f4f6f9, #e6ecf5);
+  min-height: 100vh;
+  padding: 40px;
+}
+
+/* Welcome Heading */
+h1 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Add Employee Link */
+a[href="AddEmployee.jsp"] {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+a[href="AddEmployee.jsp"]:hover {
+  background-color: #0056b3;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Table Header */
+th {
+  background-color: #2c3e50;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+}
+
+/* Table Rows */
+td {
+  padding: 12px;
+  border-bottom: 1px solid #e0e0e0;
+  color: #333;
+}
+
+/* Zebra Effect */
+tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+/* Hover Effect */
+tr:hover {
+  background-color: #e9f3ff;
+  transition: 0.2s ease;
+}
+
+/* Update Link */
+a[href^="update.jsp"] {
+  color: #28a745;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a[href^="update.jsp"]:hover {
+  text-decoration: underline;
+}
+
+/* Delete Link */
+a[href^="delete"] {
+  color: #dc3545;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a[href^="delete"]:hover {
+  text-decoration: underline;
+}
